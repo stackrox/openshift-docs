@@ -10,7 +10,7 @@ You can enable offline mode when you are installing {product-title} by using the
 
 .Procedure
 
-. If you are using a registry other than the default internet-connected registry (`registry.redhat.io` or `stackrox.io`), provide the locations where you have pushed the {product-title} images when answering the `image to use` prompts:
+. If you are using a registry other than the default internet-connected registry (`registry.redhat.io`), provide the locations where you have pushed the {product-title} images when answering the `image to use` prompts:
 +
 [source,terminal,subs=attributes+]
 ----
