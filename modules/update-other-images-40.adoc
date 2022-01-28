@@ -77,7 +77,7 @@ $ oc -n stackrox set image ds/collector collector=registry.redhat.io/advanced-cl
 ----
 Or if you're using collector slim:
 ----
-$ oc -n stackrox set image ds/collector collector=registry.redhat.io/advanced-cluster-security/rhacs-collector-slim-rhel8:{collector-version} <1>
+$ oc -n stackrox set image ds/collector collector=registry.redhat.io/advanced-cluster-security/rhacs-collector-slim-rhel8:{collector-version}
 ----
 . Apply the following cluster role and cluster role binding:
 +
