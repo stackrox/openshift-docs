@@ -17,12 +17,13 @@ toc::[]
 {product-title} now includes the ability to to set policies to define the operational readiness of the deployment. New policies include checks for liveness and readiness probes and the predefined replica counts.
 
 [id="inactive-software-packages"]
-=== Inactive Software Component Identification
+=== Inactive software component identification
 Red Hat has improved the ability of users to identify if a software package that is being used inside of a container image is inactive, which helps users to triage if a software package may be able to be removed as a hardening step or vulnerability remediation.
  
- [id="scanner-updates"]
- === Vulnerability scanning ehnahcements
+[id="scanner-updates"]
+=== Vulnerability scanning ehnahcements
 Scanner has been updated to include the following new capabilites:
+
 * Scanner now supports Alpine 3.15
 * Scanner now identifies busybox as a base OS.
 * Ubuntu vulnerability reference links have been updated to the lastest location for Ubuntu
@@ -39,7 +40,6 @@ Scanner has been updated to include the following new capabilites:
 
 [id="important-system-changes"]
 == Important system changes
-
 
 [id="policy-workflow"]
 === Redesigned policy creation workflow
