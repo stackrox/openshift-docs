@@ -1,0 +1,90 @@
+[id="369-release-notes"]
+= Red Hat Advanced Cluster Security for Kubernetes 3.69
+include::modules/common-attributes.adoc[]
+:context: 369-release-notes
+
+toc::[]
+
+{product-title} ({product-title-short}) 3.69 includes feature enhancements, bug fixes, scale improvements, and other changes.
+
+*Release date:* March 14, 2022
+
+[id="new-features"]
+== New features
+
+[id="new-policy-criteria"]
+=== New policies to manage deployment operational readiness 
+{product-title} now includes the ability to to set policies to define the operational readiness of the deployment. New policies include checks for liveness and readiness probes and the predefined replica counts.
+
+[id="inactive-software-packages"]
+=== Inactive Software Component Identification
+Red Hat has improved the ability of users to identify if a software package that is being used inside of a container image is inactive, which helps users to triage if a software package may be able to be removed as a hardening step or vulnerability remediation.
+ 
+ [id="scanner-updates"]
+ === Vulnerability scanning ehnahcements
+Scanner has been updated to include the following new capabilites:
+* Scanner now supports Alpine 3.15
+* Scanner now identifies busybox as a base OS.
+* Ubuntu vulnerability reference links have been updated to the lastest location for Ubuntu
+
+
+[id="important-bug-fixes"]
+== Important bug fixes
+
+* *ROX-9587*: Previously, e-mailed vulnerability reports were incomtaible with some e-mail clients. We've fixed this issue. 
+* *ROX-9166*: Previously, snoozed CVEs that were unsnoozed were not reported in CI when scanning images. We've fixed this issue. 
+* *ROX-9400*: Previously, {product-title-short} when clusters were deleted service accounts of the cluster were not removed from the {product-title-short} user interface. This issue has been fixed.
+* *ROX-9483*: Previously, certain search conditions using a proccess name could cause Central to crash. This issue has been addressed. 
+
+
+[id="important-system-changes"]
+== Important system changes
+
+
+[id="policy-workflow"]
+=== Redesigned policy creation workflow
+{product-title} version 3.69 includes updates  to the policy creation and editing workflows to streamline a user's experience.
+
+[id="sorting-and-filtering"]
+=== Enhancements to sorting and filtering image vulnerabilities
+{product-title} has added the ability to sort and filter on various data about the vulnerabilities contained within an image.
+
+[id="uefi-ebpf"]
+=== Enhanced compatibility with UEFI secure boot
+Collector is incompatible with UEFI secure boot when collecting runtime data using kernel modules. Now, when the collector detects that UEFI secure boot is used by the host it will automatically fail over to use EBPF probes to prevent service disruption. 
+
+[id="memory-limit-scanner"]
+=== Scanner memory limit increases
+The default Scanner memory limit was increased from 3000 MiB to 4GiB.
+
+[id="deprecation-notices]
+== Deprecation Notices
+The following features have been deprecated and will be removed in version 3.71.0. If you have any questions or concerns please contact support@redhat.com.
+
+* The external authorization plugin for scoped access control will be removed. Please use the existing in-product scoped access control.
+* The Anchore, Tenable, and Docker Trusted Registry integrations will be removed. These integrations are supersceded by the {product-title-short} scanner.
+* {product-title} alert and process comments have been deprecated.
+* The API endpoint `api/helm/cluster/add` has been deprecated in favor of the latest helm charts
+
+[%header,cols="1,1,2"]
+|===
+| Image | Description | Current version
+
+| Main
+| Includes Central, Sensor, Admission Controller, and Compliance.
+Also includes `roxctl` for use in continuous integration (CI) systems.
+| `registry.redhat.io/advanced-cluster-security/rhacs-main-rhel8:3.69.0`
+
+| Scanner
+| Scans images and nodes.
+| `registry.redhat.io/advanced-cluster-security/rhacs-scanner-rhel8:3.69.0`
+
+| Scanner DB
+| Stores image scan results and vulnerability definitions.
+| `registry.redhat.io/advanced-cluster-security/rhacs-scanner-db-rhel8:3.69.0`
+
+| Collector
+| Collects runtime activity in Kubernetes or {ocp} clusters.
+| `registry.redhat.io/advanced-cluster-security/rhacs-collector-rhel8:3.69.0`
+  `registry.redhat.io/advanced-cluster-security/rhacs-collector-slim-rhel8:3.69.0`
+|===
