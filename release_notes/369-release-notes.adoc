@@ -13,58 +13,68 @@ toc::[]
 == New features
 
 [id="new-policy-criteria"]
-=== New policies to manage deployment operational readiness 
-{product-title} now includes the ability to to set policies to define the operational readiness of the deployment. New policies include checks for liveness and readiness probes and the predefined replica counts.
+=== New policies to manage operational deployment readiness
+With {product-title} 3.69, you can now set policies to define the operational readiness of a deployment.
+New policies include checks for liveness and readiness probes and predefined replica counts.
 
 [id="inactive-software-packages"]
 === Inactive software component identification
-Red Hat has improved the ability of users to identify if a software package that is being used inside of a container image is inactive, which helps users to triage if a software package may be able to be removed as a hardening step or vulnerability remediation.
- 
+You can now quickly identify if a software package inside a container image is inactive.
+You can use this information to consider removing the inactive software package as a hardening step or for vulnerability remediation.
+
 [id="scanner-updates"]
-=== Vulnerability scanning ehnahcements
-Scanner has been updated to include the following new capabilites:
+=== Vulnerability scanning enhancements
+Scanner includes the following new capabilities:
 
-* Scanner now supports Alpine 3.15
-* Scanner now identifies busybox as a base OS.
-* Ubuntu vulnerability reference links have been updated to the lastest location for Ubuntu
-
+* Support for Alpine 3.15
+* Scanner now identifies busybox as a base operating system.
+* Ubuntu vulnerability reference links now point to the updated address link:https://ubuntu.com/security/[https://ubuntu.com/security/].
 
 [id="important-bug-fixes"]
 == Important bug fixes
 
-* *ROX-9587*: Previously, e-mailed vulnerability reports were incomtaible with some e-mail clients. We've fixed this issue. 
-* *ROX-9166*: Previously, snoozed CVEs that were unsnoozed were not reported in CI when scanning images. We've fixed this issue. 
-* *ROX-9400*: Previously, {product-title-short} when clusters were deleted service accounts of the cluster were not removed from the {product-title-short} user interface. This issue has been fixed.
-* *ROX-9483*: Previously, certain search conditions using a proccess name could cause Central to crash. This issue has been addressed. 
-
+* *ROX-9587*: Previously, e-mailed vulnerability reports were incompatible with some e-mail clients. This issue has been fixed.
+* *ROX-9166*: Previously, snoozed CVEs that were unsnoozed were not reported in CI when scanning images. This issue has been fixed.
+* *ROX-9400*: Previously, {product-title-short} did not remove the related service accounts when you deleted a cluster. This issue has been fixed.
+* *ROX-9483*: Previously, certain search conditions using a process name could sometimes cause Central to stop responding. This issue has been fixed.
 
 [id="important-system-changes"]
 == Important system changes
 
+* Red Hat has changed the default `grpcPort` in Scanner's configuration map to `8443`.
+* Red Hat is deprecating the following API endpoints:
+
+** `/v1/clusters-env/kernel-support-available`: Use `/v1/cluster-defaults` instead.
+** `/v1/helm/cluster/add`: Use the Helm charts directly.
+** Empty values for `role.access_scope_id` is deprecated in the `RoleService_CreateRole` and `RoleService_UpdateRole` methods for the `/v1/roles/` endpoint. It is now set to the unrestricted access scope ID `io.stackrox.authz.accessscope.unrestricted`.
+
 [id="policy-workflow"]
 === Redesigned policy creation workflow
-{product-title} version 3.69 includes updates  to the policy creation and editing workflows to streamline a user's experience.
+{product-title} 3.69 includes more intuitive and easier to use policy creation and editing workflows.
 
 [id="sorting-and-filtering"]
 === Enhancements to sorting and filtering image vulnerabilities
-{product-title} has added the ability to sort and filter on various data about the vulnerabilities contained within an image.
+{product-title} 3.69 includes new fields for vulnerabilities contained within an image which you use to sort and filter the vulnerabilities list.
 
 [id="uefi-ebpf"]
 === Enhanced compatibility with UEFI secure boot
-Collector is incompatible with UEFI secure boot when collecting runtime data using kernel modules. Now, when the collector detects that UEFI secure boot is used by the host it will automatically fail over to use EBPF probes to prevent service disruption. 
+Because Collector is incompatible with UEFI secure boot when collecting runtime data using kernel modules. In {product-title} 3.69, when Collector detects that the host is using UEFI secure boot, it automatically fails over to use EBPF probes to prevent service disruption.
 
 [id="memory-limit-scanner"]
 === Scanner memory limit increases
-The default Scanner memory limit was increased from 3000 MiB to 4GiB.
+Red Hat has increased the default Scanner memory limit from `3000` MiB to `4` GiB.
 
 [id="deprecation-notices]
-== Deprecation Notices
-The following features have been deprecated and will be removed in version 3.71.0. If you have any questions or concerns please contact support@redhat.com.
+== Deprecation Notice
+Red Hat is deprecating the following features in {product-title} 3.69:
 
-* The external authorization plugin for scoped access control will be removed. Please use the existing in-product scoped access control.
-* The Anchore, Tenable, and Docker Trusted Registry integrations will be removed. These integrations are supersceded by the {product-title-short} scanner.
-* {product-title} alert and process comments have been deprecated.
-* The API endpoint `api/helm/cluster/add` has been deprecated in favor of the latest helm charts
+* *External authorization plug-in for scoped access control*. Use the existing in-product scoped access control.
+* *Anchore*, *Tenable*, and *Docker Trusted Registry* integrations. The {product-title-short} scanner supersedes these integrations.
+* *Alerts and Process Comments*.
+
+Red Hat will remove these features in {product-title} 3.71.0.
+For any questions, please contact Red Hat Support at support@redhat.com.
+
 
 [%header,cols="1,1,2"]
 |===
