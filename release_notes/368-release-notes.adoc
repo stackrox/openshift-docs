@@ -1,5 +1,5 @@
 [id="368-release-notes"]
-= Red Hat Advanced Cluster Security for Kubernetes 3.68
+= {product-title} 3.68
 include::modules/common-attributes.adoc[]
 :context: 368-release-notes
 

@@ -1,5 +1,5 @@
 [id="backing-up-acs"]
-= Backing up Red Hat Advanced Cluster Security for Kubernetes
+= Backing up {product-title}
 include::modules/common-attributes.adoc[]
 :context: backing-up-acs
 

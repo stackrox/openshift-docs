@@ -7,7 +7,7 @@ include::modules/common-attributes.adoc[]
 toc::[]
 
 [role="_abstract"]
-{product-title} (RHACS) installs a set of services on your {ocp} cluster. This section describes the installation procedure for installing {product-title} on your {ocp} cluster by using an Operator.
+{product-title} ({product-title-short}) installs a set of services on your {ocp} cluster. This section describes the installation procedure for installing {product-title} on your {ocp} cluster by using an Operator.
 
 Before you install:
 
@@ -17,7 +17,7 @@ Before you install:
 The {product-title} Operator includes the following two custom resources:
 
 . *`Central`* - The central resource is a logical grouping of the following services:
-** *Central*: Central is the {product-title} application management interface and services. It handles data persistence, API interactions, and user interface (RHACS Portal) access. You can use the same Central instance to secure multiple {ocp} or Kubernetes clusters.
+** *Central*: Central is the {product-title} application management interface and services. It handles data persistence, API interactions, and user interface ({product-title-short} portal) access. You can use the same Central instance to secure multiple {ocp} or Kubernetes clusters.
 ** *Scanner*: Scanner is a Red Hat-developed and certified vulnerability scanner for scanning container images and their associated database. It analyzes all image layers to check known vulnerabilities from the Common Vulnerabilities and Exposures (CVEs) list. Scanner also identifies vulnerabilities in packages installed by package managers and in dependencies for multiple programming languages.
 . *`SecuredCluster`* - The secured cluster resource is a logical grouping of the following services:
 ** *Sensor*: Sensor is the service responsible for analyzing and monitoring the cluster. It handles interactions with the {ocp} or Kubernetes API server for policy detection and enforcement, and it coordinates with Collector.
@@ -49,7 +49,7 @@ include::modules/central-configuration-options-operator.adoc[leveloffset=+1]
 
 To create a secured cluster, you must create an init bundle. The secured cluster uses this bundle to authenticate with Central.
 
-You can create an init bundle by using the the roxctl CLI or from the RHACS portal.
+You can create an init bundle by using the the roxctl CLI or from the {product-title-short} portal.
 
 // Generating init bundle portal
 include::modules/portal-generate-init-bundle.adoc[leveloffset=+2]

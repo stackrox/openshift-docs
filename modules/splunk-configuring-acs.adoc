@@ -9,7 +9,7 @@
 Create a new Splunk integration in {product-title} by using the token value.
 
 .Procedure
-. On the RHACS portal, navigate to *Platform Configuration* -> *Integrations*.
+. On the {product-title-short} portal, navigate to *Platform Configuration* -> *Integrations*.
 . Scroll down to the *Notifier Integrations* section and select *Splunk*.
 . Click *New Integration* (*`add`* icon).
 . Enter a name for *Integration Name*.

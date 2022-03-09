@@ -14,7 +14,7 @@ Beginning from {product-title} version 3.0.55.0, the admission controller webhoo
 ====
 
 .Procedure
-. On the RHACS portal, navigate to *Platform Configuration* -> *Clusters*.
+. On the {product-title-short} portal, navigate to *Platform Configuration* -> *Clusters*.
 . Select an existing cluster from the list or select *+ New Cluster*.
 . In the cluster configuration panel, enter the details for your cluster.
 . Red Hat recommends that you only turn on the *Configure Admission Controller Webhook to listen on creates* toggle if you are planning to use the admission controller to enforce on object create events.

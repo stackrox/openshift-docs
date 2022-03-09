@@ -7,10 +7,10 @@
 
 To monitor a cluster, you must deploy Sensor.
 You must deploy Sensor into each cluster that you want to monitor.
-The following steps describe adding Sensor by using the RHACS portal.
+The following steps describe adding Sensor by using the {product-title-short} portal.
 
 .Procedure
-. On the RHACS portal, navigate to *Platform Configuration* -> *Clusters*.
+. On the {product-title-short} portal, navigate to *Platform Configuration* -> *Clusters*.
 . Select *+ New Cluster*.
 . Specify a name for the cluster.
 . Provide appropriate values for the fields based on where you are deploying the Sensor.
@@ -43,7 +43,7 @@ If you get a warning that you do not have the required permissions to deploy Sen
 After Sensor is deployed, it contacts Central and provides cluster information.
 
 .Verification
-. Return to the RHACS portal and check if the deployment is successful.
+. Return to the {product-title-short} portal and check if the deployment is successful.
 If it is successful, a green checkmark appears under section #2.
 If you do not see a green checkmark, use the following command to check for problems:
 * On {ocp}:
@@ -60,4 +60,4 @@ $ kubectl get pod -n stackrox -w
 ----
 . Click *Finish* to close the window.
 
-After installation, Sensor starts reporting security information to {product-title} and the RHACS portal dashboard begins showing deployments, images, and policy violations from the cluster on which you have installed the Sensor.
+After installation, Sensor starts reporting security information to {product-title} and the {product-title-short} portal dashboard begins showing deployments, images, and policy violations from the cluster on which you have installed the Sensor.

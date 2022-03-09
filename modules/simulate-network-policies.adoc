@@ -10,7 +10,7 @@ Your current network policies might allow unneeded network communications.
 To simulate the effects of a new set of network policies, use the network policy simulator.
 
 .Procedure
-. On the RHACS portal, select *Network Graph* from the left-hand navigation menu.
+. On the {product-title-short} portal, select *Network Graph* from the left-hand navigation menu.
 . On the *Network Graph* view header, select *Network Policy Simulator*.
 . Select *Upload and simulate network policy YAML* and upload your proposed YAML file.
 The network graph view displays what your proposed network policies would achieve.

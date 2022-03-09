@@ -134,7 +134,7 @@ You must specify `listenOnUpdates` as `true` for this to work.
 | `admissionControl.dynamic.scanInline`
 | If you set this option to `true`, the admission control service requests an image scan before making an admission decision.
 Since image scans take several seconds, enable this option only if you can ensure that all images used in your cluster are scanned before deployment (for example, by a CI integration during image build).
-This option corresponds to the *Contact image scanners* option in the RHACS Portal.
+This option corresponds to the *Contact image scanners* option in the {product-title-short} portal.
 
 | `admissionControl.dynamic.disableBypass`
 | Set it to `true` to disable bypassing the Admission Controller.

@@ -50,6 +50,6 @@ endif::[]
 :capsporv: Process
 :capspluralporv: Processes
 // Following variables are required for publishing using PV2
-:product-title: Red Hat Advanced Cluster Security for Kubernetes
+:product-title: {product-title}
 :product-version: 3.68
 :product-title-short: RHACS

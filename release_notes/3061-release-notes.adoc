@@ -1,5 +1,5 @@
 [id="3061-release-notes"]
-=  Red Hat Advanced Cluster Security for Kubernetes 3.0.61
+=  {product-title} 3.0.61
 include::modules/common-attributes.adoc[]
 :context: 3061-release-notes
 
@@ -21,7 +21,7 @@ It provides a more accurate reflection of risk than a CVSS score.
 [id="important-bug-fixes"]
 == Important bug fixes
 
-* *ROX-6991 and ROX-7058*: Previously, CSV exports of security risks were inconsistent with the RHACS user interface.
+* *ROX-6991 and ROX-7058*: Previously, CSV exports of security risks were inconsistent with the {product-title-short} user interface.
 
 * *ROX-7004*: Previously, CVE-2016-4074 was reported as a false positive when images contained the component `jq 1.6-r0` or `jq 1.6-r1`.
 

@@ -12,7 +12,7 @@ Use the instructions in this section to integrate a SAML 2.0 identity provider w
 * You must have an Okta app configured for {product-title}.
 
 .Procedure
-. On the RHACS portal, navigate to *Platform Configuration* -> *Access Control*.
+. On the {product-title-short} portal, navigate to *Platform Configuration* -> *Access Control*.
 . Open the *Add an Auth Provider* menu and select *SAML 2.0*.
 . Fill out the details for:
 ** *Integration Name:* A name to identify this authentication provider, for example, *Okta* or *Google*. The integration name is shown on the login page to help users select the right sign-in option.
@@ -39,7 +39,7 @@ After its expiry, users must re-authenticate.
 
 .Verification
 
-. On the RHACS portal, navigate to *Platform Configuration* -> *Access Control*.
+. On the {product-title-short} portal, navigate to *Platform Configuration* -> *Access Control*.
 . Select the *Auth Provider Rules* tab.
 . Under the *Auth Providers* section, select the authentication provider that you want to verify the configuration for.
 . Select *Test Login* from the *Auth Provider* section header.

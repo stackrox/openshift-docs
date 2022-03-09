@@ -7,11 +7,11 @@
 = Downloading a Sensor bundle
 
 [role="_abstract"]
-The Sensor bundle includes the necessary configuration files and scripts to install Sensor. You can download the Sensor bundle from the RHACS portal.
+The Sensor bundle includes the necessary configuration files and scripts to install Sensor. You can download the Sensor bundle from the {product-title-short} portal.
 
 .Procedure
 
-. Navigate to the RHACS portal.
+. Navigate to the {product-title-short} portal.
 . Go to *Platform Configuration* -> *Clusters*.
 . Click *New Cluster* and specify a name for the cluster.
 . If you are deploying the Sensor in the same cluster, accept the default values for all the fields.

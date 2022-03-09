@@ -5,7 +5,7 @@
 [id="reissue-internal-certificates-secured-clusters-download-yaml_{context}"]
 = Reissuing internal certificates for secured clusters by downloading YAML configuration
 
-You can download a YAML configuration file from the RHACS portal to reissue internal certificates for Sensor, Collector, and Admission Controller.
+You can download a YAML configuration file from the {product-title-short} portal to reissue internal certificates for Sensor, Collector, and Admission Controller.
 
 .Prerequisites
 
@@ -14,7 +14,7 @@ You can download a YAML configuration file from the RHACS portal to reissue inte
 .Procedure
 
 . Download the YAML configuration file:
-.. In the RHACS portal, navigate to *Platform Configuration* -> *Clusters*.
+.. In the {product-title-short} portal, navigate to *Platform Configuration* -> *Clusters*.
 .. In the *Clusters* view, select a *Cluster* to view its details.
 .. From the cluster details panel, select the link in the notification to *download a YAML configuration file*, which contains a new {ocp} secret, including the certificate and key values.
 . Apply the new YAML configuration file to the cluster.

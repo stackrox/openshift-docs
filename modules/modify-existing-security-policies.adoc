@@ -9,4 +9,4 @@
 You can edit the policies you have created and the existing default policies provided by {product-title}.
 
 .Procedure
-* On the RHACS portal, navigate to *Platform Configuration* -> *System Policies* from the left-hand navigation menu and select the policy you want to edit.
+* On the {product-title-short} portal, navigate to *Platform Configuration* -> *System Policies* from the left-hand navigation menu and select the policy you want to edit.

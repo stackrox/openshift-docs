@@ -6,7 +6,7 @@
 = Applying generated policies
 
 [role="_abstract"]
-You can apply the generated network policies from the RHACS portal.
+You can apply the generated network policies from the {product-title-short} portal.
 
 .Procedure
 * To directly apply the generated policies in the cluster from within {product-title}, select *Apply Network Policies*.

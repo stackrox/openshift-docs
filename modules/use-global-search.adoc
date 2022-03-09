@@ -14,6 +14,6 @@ By using global search you can search across all resources in your environment. 
 * Images
 * Secrets
 
-These categories are listed as a table on the RHACS portal global search page and you can click on the category name to identify results belonging to the selected category.
+These categories are listed as a table on the {product-title-short} portal global search page and you can click on the category name to identify results belonging to the selected category.
 
-To do a global search, in the RHACS portal, select *Search* on the top right side.
+To do a global search, in the {product-title-short} portal, select *Search* on the top right side.

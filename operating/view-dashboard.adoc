@@ -6,12 +6,12 @@ include::modules/common-attributes.adoc[]
 toc::[]
 
 [role="_abstract"]
-The {product-title} (RHACS) dashboard enables you to visually track and analyze key metrics such as risk across your environment, compliance status, and policy violations.
+The {product-title} ({product-title-short}) dashboard enables you to visually track and analyze key metrics such as risk across your environment, compliance status, and policy violations.
 The *Dashboard* view helps you to understand your cloud-native infrastructure, including images, containers, pods, namespaces, clusters, and their configurations.
 
 [NOTE]
 ====
-When you open the RHACS portal for the first time, you might see a blank dashboard.
+When you open the {product-title-short} portal for the first time, you might see a blank dashboard.
 After you deploy Sensor in at least one cluster, the dashboard reflects the status of your environment.
 ====
 

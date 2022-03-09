@@ -1,11 +1,11 @@
 [id="365-release-notes"]
-= Red Hat Advanced Cluster Security for Kubernetes 3.65
+= {product-title} 3.65
 include::modules/common-attributes.adoc[]
 :context: 365-release-notes
 
 toc::[]
 
-{product-title} (RHACS) 3.65 includes feature enhancements, bug fixes, scale improvements, and other changes.
+{product-title} ({product-title-short}) 3.65 includes feature enhancements, bug fixes, scale improvements, and other changes.
 
 *Release date:* September 6, 2021
 

@@ -6,10 +6,10 @@
 = Importing a security policy
 
 [role="_abstract"]
-You can import a security policy from the *System Policies* view on the RHACS portal.
+You can import a security policy from the *System Policies* view on the {product-title-short} portal.
 
 .Procedure
-. On the RHACS portal, navigate to *Platform Configuration* -> *System policies*.
+. On the {product-title-short} portal, navigate to *Platform Configuration* -> *System policies*.
 . On the *Policies* view header, select *Import Policy* and select the file you want to upload.
 
 Each security policy in {product-title} has a unique ID (UID) and a unique name.

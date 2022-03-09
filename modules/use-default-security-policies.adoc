@@ -10,7 +10,7 @@
 
 To view the default policies:
 
-* On the RHACS portal, navigate to *Platform Configuration* -> *System policies*.
+* On the {product-title-short} portal, navigate to *Platform Configuration* -> *System policies*.
 
 The *Policies* view lists the default policies and includes the following parameters for each policy:
 

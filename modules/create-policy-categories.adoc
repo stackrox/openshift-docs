@@ -8,7 +8,7 @@
 You can create new policy categories from the system policies view.
 
 .Procedure
-. On the RHACS portal, naviagte to *Platform Configuration* -> *System Policies* and select a policy you want to edit.
+. On the {product-title-short} portal, naviagte to *Platform Configuration* -> *System Policies* and select a policy you want to edit.
 . Click *Edit* in the *Policy Configuration* panel on the right.
 . Enter a new category name in the *Categories* section and then click *Create <category>*.
 . Click *Next*.

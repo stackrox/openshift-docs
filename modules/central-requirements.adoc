@@ -5,7 +5,7 @@
 [id="central-prerequisites_{context}"]
 = Prerequisites for installing Central
 
-A single containerized service called Central handles data persistence, API interactions, and user interface (Portal) access.
+A single containerized service called Central handles data persistence, API interactions, and user interface (portal) access.
 
 Central requires persistent storage:
 

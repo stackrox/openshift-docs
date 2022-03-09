@@ -22,7 +22,7 @@ Currently, {product-title} does not support using link:https://cloud.google.com/
 ====
 
 .Procedure
-. On the RHACS portal, navigate to *Platform Configuration* -> *Integrations*.
+. On the {product-title-short} portal, navigate to *Platform Configuration* -> *Integrations*.
 . Scroll down to the *External backups* section and select *Google Cloud Storage*.
 . Click *New Integration* (*`add`* icon).
 . Enter a name for *Integration Name*.

@@ -13,7 +13,7 @@ Use the following steps to generate an authentication token.
 
 .Procedure
 
-. Navigate to the RHACS portal.
+. Navigate to the {product-title-short} portal.
 . Go to *Platform Configuration* -> *Integrations*.
 . Scroll down to the *Authentication Tokens* category, and click *API Token*.
 . Click *Generate Token*.

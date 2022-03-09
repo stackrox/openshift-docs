@@ -8,7 +8,7 @@
 You can create new security policies from the system policies view.
 
 .Procedure
-. On the RHACS portal, navigate to *Platform Configuration* -> *System policies*.
+. On the {product-title-short} portal, navigate to *Platform Configuration* -> *System policies*.
 . Click *+ New Policy* below the filter box on the top right side.
 . Turn off the *Enable Policy* toggle if you want to create a policy but enable it later.
 . Enter the following details about your policy in the *Policy Summary* section:

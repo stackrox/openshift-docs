@@ -11,7 +11,7 @@ You can integrate {product-title} with Tenable for scanning images.
 * You must have a Tenable access key and a secret key for authentication.
 
 .Procedure
-. On the RHACS portal, navigate to *Platform Configuration* -> *Integrations*.
+. On the {product-title-short} portal, navigate to *Platform Configuration* -> *Integrations*.
 . Under the *Image Integrations* section, select *Tenable*.
 The *Configure Anchore scanner image integration* modal box opens.
 . Click *New Integration*.

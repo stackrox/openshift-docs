@@ -1,11 +1,11 @@
 [id="364-release-notes"]
-= Red Hat Advanced Cluster Security for Kubernetes 3.64
+= {product-title} 3.64
 include::modules/common-attributes.adoc[]
 :context: 364-release-notes
 
 toc::[]
 
-{product-title} (RHACS) 3.64 includes feature enhancements, bug fixes, scale improvements, and other changes.
+{product-title} ({product-title-short}) 3.64 includes feature enhancements, bug fixes, scale improvements, and other changes.
 
 //To upgrade to this release from a previous version, see the link:/docs/upgrade-stackrox/[Upgrade]section.
 
@@ -28,10 +28,10 @@ toc::[]
 
 Release date: August 26, 2021
 
-* *ROX-7850*: Due to a bug in the previous RHACS Operator image, configuring the proxy support in the Operator Lifecycle Manager would incorrectly send internal traffic through the proxy.
-The bug caused internal communication failure, and the RHACS services would fail to start.
-The updated image uses the fully qualified domain names for RHACS services to fix this issue.
-* *ROX-7872*: The updated Operator image sets the memory limit to 1 GiB and memory requests to 200 MiB to address out-of-memory issues when using the RHACS Operator at scale.
+* *ROX-7850*: Due to a bug in the previous {product-title-short} Operator image, configuring the proxy support in the Operator Lifecycle Manager would incorrectly send internal traffic through the proxy.
+The bug caused internal communication failure, and the {product-title-short} services would fail to start.
+The updated image uses the fully qualified domain names for {product-title-short} services to fix this issue.
+* *ROX-7872*: The updated Operator image sets the memory limit to 1 GiB and memory requests to 200 MiB to address out-of-memory issues when using the {product-title-short} Operator at scale.
 
 [id="resolved-in-version-3642"]
 === Resolved in version 3.64.2

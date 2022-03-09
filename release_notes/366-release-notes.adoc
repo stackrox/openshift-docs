@@ -1,11 +1,11 @@
 [id="366-release-notes"]
-= Red Hat Advanced Cluster Security for Kubernetes 3.66
+= {product-title} 3.66
 include::modules/common-attributes.adoc[]
 :context: 366-release-notes
 
 toc::[]
 
-{product-title} (RHACS) 3.66 includes feature enhancements, bug fixes, scale improvements, and other changes.
+{product-title} ({product-title-short}) 3.66 includes feature enhancements, bug fixes, scale improvements, and other changes.
 
 *Release date:* October 19, 2021
 
@@ -23,9 +23,9 @@ You can now identify misconfigurations in your {ocp} deployment configuration fi
 [id="new-configuration-settings-for-operator-and-helm-charts"]
 === New configuration settings for Operator and Helm charts
 
-* You can now configure tolerations for Central, Scanner, ScannerDB, Sensor, and Admission Controller in {product-title} by using Helm charts and the RHACS Operator.
+* You can now configure tolerations for Central, Scanner, ScannerDB, Sensor, and Admission Controller in {product-title} by using Helm charts and the {product-title-short} Operator.
 
-* You can now disable the automatic administrator password generation for Central by specifying the `adminPasswordGenerationDisabled` as `true` in the RHACS Operator configuration.
+* You can now disable the automatic administrator password generation for Central by specifying the `adminPasswordGenerationDisabled` as `true` in the {product-title-short} Operator configuration.
 
 [id="important-bug-fixes"]
 == Important bug fixes
@@ -58,7 +58,7 @@ Release date: October 20, 2021
 
 * Red Hat has deprecated the Alpine-based images of {product-title}. All images are now based on Red Hat Universal Base Image (UBI).
 
-* The admission controller settings for the RHACS Operator now listen to both `update` and `create` events by default.
+* The admission controller settings for the {product-title-short} Operator now listen to both `update` and `create` events by default.
 
 * You can no longer delete the default security policies on fresh installations of {product-title} 3.65 or newer. However, if you upgrade from an older version to 3.65 or newer, you can still delete the default security policies.
 

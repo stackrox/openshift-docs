@@ -21,7 +21,7 @@ Follow the instructions at link:https://docs.aws.amazon.com/AmazonECR/latest/use
 ** ecr:ListImages
 
 .Procedure
-. On the RHACS portal, navigate to *Platform Configuration* -> *Integrations*.
+. On the {product-title-short} portal, navigate to *Platform Configuration* -> *Integrations*.
 . Under the *Image Integrations* section, select *Amazon Elastic Container Registry*.
 +
 The *Configure image integration* modal box opens.
