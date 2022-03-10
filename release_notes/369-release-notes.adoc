@@ -12,6 +12,10 @@ toc::[]
 [id="new-features"]
 == New features
 
+[id="openshift-container-registry]
+=== Enhanced support for OpenShift Container Registry (OCR)
+With {product-title} 3.69, a lightweight version of scanner is delivered as part of secured cluster services on OpenShift by default to more effectively scan OpenShift Container Registry. For non-OpenShift environments this scanner is optional. OpenShift users not using the {product-title} are advised to update their helm charts to take advantage of these new capabilites.
+
 [id="new-policy-criteria"]
 === New policies to manage operational deployment readiness
 With {product-title} 3.69, you can now set policies to define the operational readiness of a deployment.
