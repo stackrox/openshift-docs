@@ -213,7 +213,7 @@ Otherwise, you must ensure that Central can access the online probe repository h
 | If you set this option to `true`, {product-title} disables the audit log detection features used to detect access and modifications to configuration maps and secrets.
 
 | `scanner.disable`
-| If you set this option to `true`, {product-title} deploys a lightweight scanner and scannerdb in the secured cluster to allow scanning images on OpenShift Container Registry. It's reccomended this be set to true on OpenShift or clusters relying on a registry not exposed outside of the cluster. Defaults to `false`
+| If you set this option to `false`, {product-title} deploys a lightweight scanner and scannerdb in the secured cluster to allow scanning images on OpenShift Container Registry. Enabling scanner is only supported on OpenShift. Defaults to `true`
 
 | `scanner.dbTolerations`
 | If the node selector selects tainted nodes, use this parameter to specify a taint toleration key, value, and effect for scannerdb.
