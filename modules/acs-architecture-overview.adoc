@@ -62,7 +62,7 @@ You can use the same Central instance to secure multiple {ocp} or Kubernetes clu
 
 {product-title} includes an image vulnerability scanning component called Scanner.
 It analyzes all image layers to check for known vulnerabilities from the Common Vulnerabilities and Exposures (CVEs) list.
-Scanner also identifies vulnerabilities in packages installed by package managers and in dependencies for multiple programming languages.
+Scanner also identifies vulnerabilities in packages installed by package managers and in dependencies for multiple programming languages. Scanner is deployed only on the Central cluster in non-OpenShift environments and is deployed on every cluster in OpenShift clusters.
 //TODO: Add link to Examine images topic.
 
 [NOTE]
