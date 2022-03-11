@@ -124,7 +124,7 @@ StackRox support recent Kubernetes and {ocp} versions, and test on managed Kuber
 [NOTE]
 ====
 
-Collector will not install on GKE clusters if you enable link:https://cloud.google.com/kubernetes-engine/docs/how-to/shielded-gke-nodes#secure_boot[secure boot] because third-party unsigned kernel module, which are not signed by Google's CA, cannot be loaded when secure boot is enabled.
+To install Collector on GKE clusters with link:https://cloud.google.com/kubernetes-engine/docs/how-to/shielded-gke-nodes#secure_boot[secure boot] enabled, you must use eBPF probes, because third-party unsigned kernel module, which are not signed by Google's CA, cannot be loaded when secure boot is enabled. At the start Collector will identify secure boot status, and switch to eBPF probes if needed.
 ====
 
 Along with other types of clusters, StackRox also supports clusters created by using the link:https://github.com/kubernetes/kops[kops - Kubernetes Operations] tool with the default configurations on Amazon Web Services (AWS).

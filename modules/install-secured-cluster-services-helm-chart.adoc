@@ -9,7 +9,7 @@ After you configure the `values-public.yaml` and `values-private.yaml` files, in
 
 [CAUTION]
 ====
-To install Collector on systems configured with Unified Extensible Firmware Interface (UEFI) boot, you must use eBPF probes because kernel modules are unsigned, and the UEFI firmware cannot load unsigned packages.
+To install Collector on systems configured with Unified Extensible Firmware Interface (UEFI) Secure Boot enabled, you must use eBPF probes because kernel modules are unsigned, and the UEFI firmware cannot load unsigned packages. At the start Collector will identify Secure Boot status, and switch to eBPF probes if needed.
 ====
 
 .Procedure
