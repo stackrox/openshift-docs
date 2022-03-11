@@ -35,7 +35,7 @@ include::modules/create-policy-from-system-policies-view.adoc[leveloffset=+2]
 
 [role="_additional-resources"]
 .Additional resources
-* xref:../manage-security-policies.adoc#policy-criteria_manage-security-policies[Policy criteria]
+* xref:../operating/manage-security-policies.adoc#policy-criteria_manage-security-policies[Policy criteria]
 
 include::modules/create-policy-from-risk-view.adoc[leveloffset=+2]
 
