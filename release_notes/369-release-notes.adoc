@@ -7,7 +7,7 @@ toc::[]
 
 {product-title} ({product-title-short}) 3.69 includes feature enhancements, bug fixes, scale improvements, and other changes.
 
-*Release date:* March 14, 2022
+*Release date:* March 21, 2022
 
 [id="new-features"]
 == New features
@@ -70,20 +70,20 @@ Red Hat has increased the default Scanner memory limit from `3000` MiB to `4` Gi
 
 [id="deprecation-notices]
 == Deprecation Notice
-Red Hat is deprecating the following features in {product-title} 3.69. 
+Red Hat is deprecating some of the features in {product-title} 3.69. Red Hat will remove these deprecated features in the following release:
 
-Red Hat will remove the following features in {product-title} 3.71.0:
+* {product-title} 3.71.0:
 
-* *External authorization plug-in for scoped access control*. Use the existing in-product scoped access control.
-* *Anchore*, *Tenable*, and *Docker Trusted Registry* integrations. The {product-title-short} scanner supersedes these integrations.
-* *Alerts and Process Comments*.
+** *External authorization plug-in for scoped access control*. Use the existing in-product scoped access control.
+** *Anchore*, *Tenable*, and *Docker Trusted Registry* integrations. The {product-title-short} scanner supersedes these integrations.
+** *Alerts and Process Comments*.
 
-Red Hat will remove these features in {product-title} 3.70.0:
+* {product-title} 3.70.0:
 
-* *Default Policy Deletion* will no longer be supported. Please disable default policies rather than deleting them going forward.
-* *PolicyFields* in `/v1/policies` will no longer be exposed in API responses. This field is not modifiable in the REST API.
+** {product-title} will not allow deleting default policies. So instead of deleting, you can disable default policies that you do not need.
+** The `/v1/policies` API endpoint response will not return the *field* response body parameter.
+
 For any questions, please contact Red Hat Support at support@redhat.com.
-
 
 [%header,cols="1,1,2"]
 |===
