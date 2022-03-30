@@ -13,11 +13,13 @@ toc::[]
 [id="released-in-version-3691"]
 === Released in version 3.69.1
 
-Release date: March 28, 2022
+Release date: March 31, 2022
 
 [id="openshift-container-registry]
-==== Enhanced support for OpenShift Container Registry (OCR)
-With {product-title} 3.69, a lightweight version of scanner is delivered as part of secured cluster services on OpenShift by default to more effectively scan OpenShift Container Registry. For non-OpenShift environments this scanner is optional. OpenShift users not using the {product-title} are advised to update their helm charts to take advantage of these new capabilities.
+==== Scanning of the integrated OpenShift Container Registry
+{product-title} 3.69 includes a lightweight version of Scanner as part of the secured cluster services on {ocp} by default to more effectively scan the OpenShift Container Registry.
+For non-OpenShift environments, this Scanner is optional.
+If you are using {ocp} and not using the {product-title}, Red Hat advises you to update your Helm charts to take advantage of these new capabilities.
 
 [id="released-in-version-3690"]
 === Released in version 3.69.0
@@ -49,14 +51,6 @@ Scanner includes the following new capabilities:
 * *ROX-9166*: Previously, snoozed CVEs that were unsnoozed were not reported in CI when scanning images. This issue has been fixed.
 * *ROX-9400*: Previously, {product-title-short} did not remove the related service accounts when you deleted a cluster. This issue has been fixed.
 * *ROX-9483*: Previously, certain search conditions using a process name could sometimes cause Central to stop responding. This issue has been fixed.
-
-[id="resolved-in-version-3691"]
-=== Resolved in version 3.69.1
-
-Release date: March 28, 2022
-
-* *ROX-9833*: Previously, the {product-title-short}, removing enforcement from a built-in policy would result in an error. This issue has been fixed.
-* *ROX-9834*: Previously, when used in policy criteria, the greater than and less than operators did not work correctly. This is has been fixed.
 
 [id="important-system-changes"]
 == Important system changes
