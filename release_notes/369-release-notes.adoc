@@ -80,7 +80,7 @@ In {product-title} 3.69, when Collector detects that the host is using UEFI secu
 Red Hat has increased the default Scanner memory limit from `3000` MiB to `4` GiB.
 
 [id="deprecation-notices]
-== Deprecation Notice
+== Deprecation Notices
 Red Hat is deprecating some of the features in {product-title} 3.69. Red Hat will remove these deprecated features in the following release:
 
 * {product-title} 3.71.0:
@@ -93,6 +93,8 @@ Red Hat is deprecating some of the features in {product-title} 3.69. Red Hat wil
 
 ** {product-title} will not allow deleting default policies. So rhather than deleting, you can disable default policies that you do not need.
 ** The `/v1/policies` API endpoint response will not return the *field* response body parameter.
+
+* In {product-title-short} 3.70, Red Hat will remove the support for security policies that do not have a `policyVersion`. Therefore, if you have some externally stored older policies, you must convert them to use `policyVersion` 1.1. To do this, import the old policies into {product-title-short} and then export them again. You can check the `policyVersion` field for your stored policies to identify if they need conversion.
 
 For any questions, please contact the Red Hat support team at support@redhat.com.
 

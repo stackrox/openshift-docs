@@ -5,40 +5,44 @@
 [id="acs-architecture_{context}"]
 = {product-title} architecture overview
 
-{product-title}({product-title-short}) installs as a set of containers in your {ocp} or Kubernetes cluster and includes multiple services. Red Hat categorizes these services as follows:
+{product-title}({product-title-short}) uses a distributed architecture that supports high scale deployments and is optimized to minimize the impact on the underlying {ocp}(OCP) or Kubernetes nodes. You install {product-title-short} as a set of containers in your {ocp} or Kubernetes cluster. It includes services that you install on each cluster secured by RHACS and centralized services you install on one cluster.
+
+.High level {product-title} architecture for {ocp}
+image::acs-architecture-ocp.png[High-level {product-title} architecture for {ocp}]
 
 [discrete]
-== Central
-The central resource is a logical grouping of the Central and Scanner services.
-You install these services only once, and you can monitor multiple separate clusters by using the same installation.
+== Centralized services
+You install Centralized services on a single cluster (*Cluster 1* in _Figure 1_ and _2_). These services includes two main components, Central and Scanner.
+However, when you install {product-title} on {ocp}, you also install a lightweight version of Scanner on each secured cluster (_Figure 1_) to enable scanning of images in the integrated OpenShift Container Registry (OCR).
 
 * *Central*:
 Central is the {product-title-short} application management interface and services.
 It handles data persistence, API interactions, and user interface ({product-title-short} Portal) access.
 You can use the same Central instance to secure multiple OpenShift Container Platform or Kubernetes clusters.
 * *Scanner*:
-Scanner is a Red Hat-developed and certified vulnerability scanner for scanning container images and their associated database.
+Scanner is a Red Hat-developed and certified vulnerability scanner for scanning container images and their associated databases.
 It analyzes all image layers to check known vulnerabilities from the Common Vulnerabilities and Exposures (CVEs) list.
 Scanner also identifies vulnerabilities in packages installed by package managers and in dependencies for multiple programming languages.
 
 [discrete]
-== SecuredCluster
-The secured cluster resource is a logical grouping of the following services:
+== Secured cluster services
+You install the secured cluster services on each cluster that you want to secure by using the {product-title} (*Cluster N* in _Figure 1_ and _2_). Cluster where you install Central is also secured and includes these services.
 
 * *Sensor*:
 Sensor is the service responsible for analyzing and monitoring the cluster.
 It handles interactions with the OpenShift Container Platform or Kubernetes API server for policy detection and enforcement, and it coordinates with Collector.
-You must install a Sensor into each cluster that you want to monitor.
+
 * *Admission controller*:
 The admission controller prevents users from creating workloads that violate security policies in {product-title-short}.
-(Optional) You must install an Admission Controller into each cluster you want to monitor.
+
 * *Collector*:
 Collector analyzes and monitors container activity on cluster nodes.
 It collects information about container runtime and network activity and sends the collected data to Sensor.
-You must install the Collector into each node that you want to monitor.
 
-.High level {product-title} architecture for {ocp}
-image::acs-logical-architecture-ocp.png[High-level {product-title} architecture for {ocp}]
+* *Scanner* (only on {ocp}):
+On {ocp}, RHACS installs a lightweight version of Scanner on each secured cluster (_Figure 1_) to enable scanning of images in the integrated OCR.
+
+Figure 2 depicts the architecture in a non-OCP Kubernetes environment, where you only install the Scanner centrally.
 
 .High level {product-title} architecture for Kubernetes
-image::acs-logical-architecture-kubernetes.png[High-level {product-title} architecture for Kubernetes]
+image::acs-architecture-kubernetes.png[High-level {product-title} architecture for Kubernetes]
